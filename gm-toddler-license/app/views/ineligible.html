@@ -1,0 +1,36 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  Content page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukBackLink({
+    text: "Back",
+    href: "javascript:window.history.back()"
+  }) }}
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-l">
+        Your toddler is ineligible for Green Man festival at the moment
+      </h1>
+
+      <p>
+        Your toddler needs to be able to stay up past 7pm. Otherwise they'll miss the best stuff on the lineup. 
+      </p>
+      <p>
+        To help your toddler stay up you could:
+      </p>   
+      <ul class="govuk-list govuk-list--bullet">
+        <li>train them by taking them to some gigs in the lead up to the festival</li>
+        <li>bring packets of Haribo to keep them wired up for the evening</li>
+      </ul>
+    </div>
+  </div>
+
+{% endblock %}
